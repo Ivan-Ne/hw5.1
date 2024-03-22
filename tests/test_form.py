@@ -14,7 +14,7 @@ def test_fill_form(browser_personal_settings):
     browser.element('[value="1999"]').click()
     browser.element('.react-datepicker__month-select').click()
     browser.element('[value="8"]').click()
-    browser.element('[class="react-datepicker__day react-datepicker__day--008"]').click()
+    browser.element('.react-datepicker__day.react-datepicker__day--008').click()
     browser.element('#subjectsInput').type('Physics').press_enter()
     browser.element('#subjectsInput').perform(command.js.scroll_into_view)
     browser.element('[for="hobbies-checkbox-1"]').click()
